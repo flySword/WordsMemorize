@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="@dimen/activity_horizontal_margin"
+              android:paddingRight="@dimen/activity_horizontal_margin"
+              android:paddingTop="@dimen/activity_vertical_margin"
+              android:paddingBottom="@dimen/activity_vertical_margin"
+              android:layout_margin="@dimen/activity_vertical_margin"
+              android:orientation="vertical"
+              tools:context=".MainActivity">
+
+
+    <TextView android:id="@+id/text1"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Words:" android:textColor="#fffffe20" android:paddingBottom="10dp" android:textSize="30sp"/>
+
+    <TextView   android:id="@+id/text2"
+            android:text="@string/hello_world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:paddingBottom="50dp" android:textSize="30sp"
+            android:textColor="#ff42ff2f"/>
+
+    <TextView android:id="@+id/text3"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Mean:" android:paddingBottom="10dp" android:textSize="30sp"
+              android:textColor="#fffff757"/>
+
+    <TextView android:id="@+id/text4"
+            android:text="@string/hello_world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textSize="30sp" android:textColor="#ff66ffb8"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+            android:gravity="bottom">
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="previous"
+                android:onClick="previousOnClick"
+                android:layout_weight="1" android:textSize="25sp"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="next"
+                android:onClick="nextOnClick"
+                android:layout_weight="1" android:textSize="25sp"/>
+    </LinearLayout>
+
+</LinearLayout>
